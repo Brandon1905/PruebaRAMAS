@@ -20,7 +20,8 @@ function App() {
   useEffect(() => {
     Get();
   }, []);
-
+ 
+  
   const Delete = (id) => {
     axios.delete(`https://localhost:44351/api/Autores/${id}`)
       .then(() => {
