@@ -21,6 +21,16 @@ function App() {
     Get();
   }, []);
 
+  const Delete = (id) => {
+    axios.delete(`https://localhost:44351/api/Autores/${id}`)
+      .then(() => {
+        setAutor(prevState => prevState.filter(userObj => userObj.au_id !== id));
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  };
+
   const Get = () => {
     axios.get("https://localhost:44351/api/Autores")
       .then((response) => setAutor(response.data))
