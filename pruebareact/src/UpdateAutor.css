@@ -1,0 +1,12 @@
+
+  .centered-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .centered-form table {
+    width: 400px; /* Ancho del formulario */
+  }
+  
