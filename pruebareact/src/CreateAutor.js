@@ -46,7 +46,27 @@ function CreateAutor({ onInsert }) {
     <div className="centered-form">
       <div className="user-details-container">
         <h2>Datos del nuevo autor</h2>
-        
+        <div>
+          <TextField id="filled-basic" label="ID" variant="filled" name="au_id" value={editedAutor.au_id} onChange={handleInputChange} />
+        </div>
+        <div>
+          <TextField id="filled-basic" label="Apellido" variant="filled" name="au_lname" value={editedAutor.au_lname} onChange={handleInputChange} />
+        </div>
+        <div>
+          <TextField id="filled-basic" label="Nombre" variant="filled" name="au_fname" value={editedAutor.au_fname} onChange={handleInputChange} />
+        </div>
+        <div>
+          <TextField id="filled-basic" label="Teléfono" variant="filled" name="phone" value={editedAutor.phone} onChange={handleInputChange} />
+        </div>
+        <div>
+          <TextField id="filled-basic" label="Dirección" variant="filled" name="address" value={editedAutor.address} onChange={handleInputChange} />
+        </div>
+        <div>
+          <TextField id="filled-basic" label="Ciudad" variant="filled" name="city" value={editedAutor.city} onChange={handleInputChange} />
+        </div>
+        <div>
+          <TextField id="filled-basic" label="Estado" variant="filled" name="state" value={editedAutor.state} onChange={handleInputChange} />
+        </div>
         <div>
           <TextField id="filled-basic" label="Código Postal" variant="filled" name="zip" value={editedAutor.zip} onChange={handleInputChange} />
         </div>
